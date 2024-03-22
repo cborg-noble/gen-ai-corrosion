@@ -1,3 +1,4 @@
+import deepchem as dc
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -6,7 +7,6 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 import numpy as np
 import time
-import deepchem as dc
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import mean_squared_error
