@@ -1,0 +1,17 @@
+﻿component-1_identifier,component-1_amount,component-2_identifier,component-2_amount,input_temperature,input_pressure,input_CO2,input_H2S,output_CorrosionRate,output_AvgProtectPercent
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,50,380,8.92,0.09,0.595,95.9
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,50,700,24.5,0.1,1.28,91.17
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,60,400,9,0.08,1.22,91.59
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,60,400,15,0.78,0.46,96.83
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,40,500,24,0.59,0.53,96.34
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,40,500,11,0.99,0.22,97.48
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,50,380,8.92,0.09,1,93.14
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),100,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),0,50,380,8.92,0.09,0.8,94.23
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,50.2,380.5,9.4,0.4,1.2,96.6
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,50.9,700.1,24.7,1.1,2,92
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,61,400.5,9.2,0.7,1.8,92.6
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,60.1,400.5,15.5,1.1,0.9,97.4
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,40.1,500.1,24,1.5,1.4,97.1
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,40.3,500.5,11.1,1.3,0.9,97.8
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,50.1,380.6,9.8,0.4,1.3,93.7
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),0,CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),100,51,381,9.4,0.9,1.2,94.2

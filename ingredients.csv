@@ -1,0 +1,11 @@
+﻿ID,group,SMILES,cost
+CORR1019 (2-undecyl-1-aminoethyl imidazoline),imidazoline,CCCCCCCCCCCC1=NCCN1C(C)N,0.207775833
+CORR1020 (2-undecyl-1-hydroxyethyl imidazoline),imidazoline,CCCCCCCCCCCC1=NCCN1CCO,0.870278591
+"3-undecane-4-aryl-5-mercapto-1,2,4-triazole",fatty acid triazole,C1(=NC(=S)NN1)N,0.391779437
+"3(heptadeca-8-ene)-4-aryl-5-mercapto-1,2,4-triazole",fatty acid triazole,CC1(=NC(=S)NN1)N,0.028409536
+"3(deca-9-ene)− 4-aryl-5-mercapto-1,2–4-triazole",fatty acid triazole,CCC1(=NC(=S)NN1)N,0.667062873
+indole,aromatic heterocycle,C1=CC=C2C(=C1)C=CN2,0.598919233
+1H-benzotriazole,fatty acid triazole,C1=CC2=NNN=C2C=C1,0.860655571
+"1,3-Benzothiazole ",fatty acid triazole,C1=CC=C2C(=C1)N=CS2,0.731746189
+"4-Amino-5-mercapto-1,2,4-triazole ",fatty acid triazole,c1(=S)[nH]nc(n1N)NN,0.720318273
+(1H-benzo[d]imidazol-2-yl)methanamine,Dimerized amido-amines,C1=CC=C2C(=C1)NC(=N2)CN,0.881134322
