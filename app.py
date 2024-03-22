@@ -1,4 +1,7 @@
-import deepchem as dc
+# import deepchem as dc
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+from rdkit.ML.Descriptors import MoleculeDescriptors
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -21,6 +24,13 @@ from sklearn.metrics import mean_squared_error
 #     d1.FinishDrawing()
 #     svg1 = d1.GetDrawingText().replace('svg:','')
 #     st.image(svg1)
+
+def featurize(smiles):
+    mol = Chem.MolFromSmiles(smiles[0])
+    descriptors = list(np.array(Descriptors._descList)[:,0])
+    calculator = MoleculeDescriptors.MolecularDescriptorCalculator(descriptors)
+    res = np.array(calculator.CalcDescriptors(mol))
+    return res
 
 def visualize_molecule(smiles):
 
@@ -118,17 +128,17 @@ def main():
         
         
         if st.button("Train AI model and generate preditions"):
+
             df = pd.read_csv('ci_smiles_ml.csv')
             smiles = [str(x).upper() for x in df['SMILES']]
 
-            rdkit_featurizer = dc.feat.RDKitDescriptors()
-            features = rdkit_featurizer(smiles)
-
-            df_featurized = pd.DataFrame(features, columns=rdkit_featurizer.descriptors)
+            features = [featurize(x) for x in smiles]
+            descriptors = list(np.array(Descriptors._descList)[:,0])
+            df_featurized = pd.DataFrame(features, columns=descriptors)
             df_featurized['SMILES'] = smiles
             df_featurized['CorrosionRate'] = df['CorrosionRate']
 
-            X = df_featurized[rdkit_featurizer.descriptors].values
+            X = df_featurized[descriptors].values
 
             output= 'CorrosionRate'
             y = df_featurized[output]
@@ -154,7 +164,7 @@ def main():
             st.plotly_chart(fig, use_container_width=False)
 
 
-            X_new = rdkit_featurizer(all_new_smiles)
+            X_new = [featurize(x) for x in all_new_smiles]
             y_pred_new = rf.predict(X_new)
             data = {'SMILES':all_new_smiles, 'Predicted Corrosion Rate (mpy)':y_pred_new}
             df_new = pd.DataFrame(data).sort_values(by='Predicted Corrosion Rate (mpy)', ascending=False)
